@@ -8,9 +8,9 @@ How to use:
 Height Converter
 converts feet and inches to centimetres.
 
-[Preview](https://i.imgur.com/kujy26t.png)
+<a href="https://i.imgur.com/kujy26t.png" title="source: imgur.com" /></a>
 
 Word Counter
 will give you a count of your words typed in the box.
 
-[Preview](https://i.imgur.com/LoveiR5.png)
+<a href="https://i.imgur.com/LoveiR5.png" title="source: imgur.com" /></a>

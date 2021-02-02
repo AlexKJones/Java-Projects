@@ -6,5 +6,9 @@ How to use:
 - java -jar "/HeightConversion/dist/HeightConversion.jar"
 
 Height Converter
-converts feet and inches to centimetres
-[preview](https://i.imgur.com/kujy26t.png)
+converts feet and inches to centimetres.\n
+[Preview](https://i.imgur.com/kujy26t.png)
+
+Word Counter
+will give you a count of your words typed in the box.\n
+[Preview](https://i.imgur.com/LoveiR5.png)

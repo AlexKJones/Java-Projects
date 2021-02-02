@@ -41,7 +41,7 @@ public class heightConverter extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Feet and inches Conversion to Centimeters");
 
-        jPanel1.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
 
         ftLabel.setFont(new java.awt.Font("Futura", 0, 18)); // NOI18N
         ftLabel.setText("Feet");
@@ -49,7 +49,7 @@ public class heightConverter extends javax.swing.JFrame {
         inchLabel.setFont(new java.awt.Font("Futura", 0, 18)); // NOI18N
         inchLabel.setText("Inches");
 
-        convertButton.setBackground(new java.awt.Color(0, 0, 255));
+        convertButton.setBackground(new java.awt.Color(0, 153, 153));
         convertButton.setFont(new java.awt.Font("Futura", 0, 18)); // NOI18N
         convertButton.setForeground(new java.awt.Color(255, 255, 255));
         convertButton.setText("Convert To");

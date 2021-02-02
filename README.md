@@ -1,4 +1,4 @@
-A few practice Java Projects
+A few Java Projects
 
 How to use:
 - Download folder for project you wish to view

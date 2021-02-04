@@ -14,3 +14,8 @@ Word Counter
 will give you a count of your words typed in the box.
 
 <a href="https://i.imgur.com/LoveiR5.png"><img src="https://i.imgur.com/LoveiR5.png" title="source: imgur.com" /></a>
+
+Weight Converter
+converts Kgs to Pounts.
+
+<a href="https://i.imgur.com/CmT4u3v.png"><img src="https://i.imgur.com/CmT4u3v.png" title="source: imgur.com" /></a>

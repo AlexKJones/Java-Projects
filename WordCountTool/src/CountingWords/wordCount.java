@@ -171,8 +171,12 @@ public class wordCount extends javax.swing.JFrame {
         int i = 0, words = 1;
         
         for(i=0; i<sentence.length (); i++) {
-            if(sentence.charAt(i)==' ')
+            if(sentence.length() != 0) {
+                if(sentence.charAt(i)==' ')
                 words++;
+            } else {
+                words = 0;
+            }
         }
         totalCountTextField.setText(" "+words);
         

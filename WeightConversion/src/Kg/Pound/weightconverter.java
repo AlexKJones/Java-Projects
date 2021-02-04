@@ -5,6 +5,8 @@
  */
 package Kg.Pound;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author alexjones
@@ -47,6 +49,7 @@ public class weightconverter extends javax.swing.JFrame {
         jLabel1.setText("Kilos to Pound Conversion");
 
         kgTextField.setFont(new java.awt.Font("Futura", 0, 13)); // NOI18N
+        kgTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         convertButton.setBackground(new java.awt.Color(0, 102, 102));
         convertButton.setFont(new java.awt.Font("Futura", 1, 13)); // NOI18N
@@ -59,6 +62,7 @@ public class weightconverter extends javax.swing.JFrame {
         });
 
         poundTextField.setFont(new java.awt.Font("Futura", 0, 13)); // NOI18N
+        poundTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         clearButton.setBackground(new java.awt.Color(204, 0, 204));
         clearButton.setFont(new java.awt.Font("Futura", 1, 13)); // NOI18N
@@ -93,28 +97,29 @@ public class weightconverter extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(109, 109, 109)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(convertButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(kgTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel2))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(poundTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jLabel3))))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGap(35, 35, 35)
+                            .addComponent(clearButton)
+                            .addGap(185, 185, 185)
+                            .addComponent(exitButton)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(convertButton, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(kgTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(poundTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel3))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(clearButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(exitButton)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,6 +161,13 @@ public class weightconverter extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void convertButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_convertButtonActionPerformed
+        
+        double kilo,pound,convert;
+        
+        kilo=Double.parseDouble(kgTextField.getText());
+        convert = (double) (kilo * 2.2046226218);
+        
+        poundTextField.setText(new DecimalFormat("##.##").format(convert));
         
     }//GEN-LAST:event_convertButtonActionPerformed
 

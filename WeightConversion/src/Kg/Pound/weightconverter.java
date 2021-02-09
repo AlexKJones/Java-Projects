@@ -29,6 +29,7 @@ public class weightconverter extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollBar1 = new javax.swing.JScrollBar();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         kgTextField = new javax.swing.JTextField();
@@ -223,6 +224,7 @@ public class weightconverter extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JTextField kgTextField;
     private javax.swing.JTextField poundTextField;
     // End of variables declaration//GEN-END:variables
